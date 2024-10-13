@@ -81,14 +81,14 @@ div#Main{
     left: 53%;
 }
 
-@keyframes slide {
+/*@keyframes slide {
     from {
       transform: translateX(0);
     }
     to {
       transform: translateX(-100%);
     }
-  }
+  }*/
   
   .carp {
     overflow: hidden;
