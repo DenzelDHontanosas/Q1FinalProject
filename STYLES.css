@@ -1,0 +1,143 @@
+body,html { 
+    min-height: 100vh; 
+    margin: 0;
+  }
+
+*{
+  box-sizing: border-box;
+}
+
+#bg {
+    background-image: url("ELEMENTS/BODY.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+p{
+    font-family: Tahoma;
+    color:white;
+}
+
+
+div#Main{
+    position: relative;
+    min-height: 100vh;
+    margin: 10px;
+    border: 1px solid green;
+    overflow: hidden;
+
+}
+
+#title{
+    min-width: 100px;
+    height: 100px;
+    z-index: 40;
+    position: absolute;
+    top: 19%;
+    left: 51%
+}
+#icon{
+    position: absolute;
+    
+    height: 300px;
+    z-index:30;
+    right: 0%;
+    bottom: 0%;
+    
+}
+#A { z-index: 20;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 0%;
+    left: 23%;
+    
+ }
+#B { 
+    z-index: 20;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 0%;
+    left: 23%;
+    
+ }
+#C { z-index: 20;
+     position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 0%;
+    left: 23%;
+     
+}
+
+#card{
+    height: 500px;
+    width: 571px;
+    z-index: 10; 
+    position: absolute; 
+    top: 15%;
+    left: 53%;
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carp {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .carp:before,
+  .carp:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  
+  .carp:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white  );
+  }
+  
+  .carp:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white );
+  }
+  
+  .carp:hover .slide {
+    animation-play-state: paused;
+  }
+  
+  .slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+  }
+  
+  .slide img {
+    height: 390px;
+    margin: 250px 40px 20px 40px;
+    z-index: 1;
+  }
+
+#info{
+    padding: 30px;
+    border: 20px rgb(6, 68, 32);
+    background-color: rgb(6, 68, 32);
+}
+
+a{
+    color:white;
+}
